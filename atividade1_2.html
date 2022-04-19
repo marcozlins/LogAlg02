@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,13 +12,13 @@
 
     <script>
 
-        var nome = prompt('Digite o nome do funcionário');
+        var nome = prompt(`Digite o nome do funcionário`);
         
-        var tempoServico = parseFloat(prompt('Digite o tempo de serviço'));
+        var tempoServico = parseFloat(prompt(`Digite o tempo de serviço`));
        
-        var salarioMedio = parseFloat(prompt('Digite o salário médio'));
+        var salarioMedio = parseFloat(prompt(`Digite o salário médio`));
 
-        var idadeFuncionario = parseFloat(prompt('Digite a idade do funcionário'));
+        var idadeFuncionario = parseFloat(prompt(`Digite a idade do funcionário`));
 
         var dados = `
         Nome: ${nome}<br>
@@ -33,38 +33,49 @@
          if (tempoServico > 12) {
 
             // Calcula 10% do salário médio com abono.
-             abono = salarioMedio * 10 / 100
+             abono = salarioMedio * 10 / 100;
+         
 
-             abono = abono + idadeFuncionario
+             abono = abono + idadeFuncionario;
 
-             // Sa
-             var proximoSalario = salário médio + abono.
-
+             // Salário médio + abono
+             var proximoSalario = salarioMedio + abono;
 
          }
+         
 
-         var dados = ` 
-         Abono salarial: ${abono}
-         Próximos salários: ${proximoSalario}
+         dados += ` 
+         
+         <hr>
+         Abono salarial: ${abono}<br>
+         Próximos salários: ${proximoSalario}<br>
          `;
 
 
          
          // Variável para armazenar o INSS.
-         var inss = o;
+         var inss = 0;
 
          
          // Ateé 1500, 5%
          if (proximoSalario <= 1500) {
-           inss = proximoSalario * 5% / 100 
+           
+            inss = proximoSalario * 5 / 100; 
         
-       
+         // de R$ 1.500,01 até R$ 2.500,00, 10%
         } else if (proximoSalario <= 2.500) {
-            inss = proximoSalario * 10% / 100
-        
-        }else (proximoSalario <= 3.500) {
-            inss = proximoSalario * 13% / 100 
+           
+            inss = proximoSalario * 10 / 100;
+         
+         // de R$ 2.500,01 até R$ 3.500,00, 13%
+        } else if (proximoSalario <= 3.500) {
             
+            inss = proximoSalario * 13 / 100; 
+         
+         // acima de 3.500,00, 15%
+        } else  {
+           
+            inss = proximoSalario * 15 / 100;
         }
 
 
