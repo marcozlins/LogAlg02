@@ -20,17 +20,62 @@
 
         var idadeFuncionario = parseFloat(prompt('Digite a idade do funcionário'));
 
-        document.write(`
+        var dados = `
         Nome: ${nome}<br>
         Tempo de serviço: ${tempoServico}<br>
         Salário médio: ${salarioMedio}<br>
         Idade: ${idadeFuncionario}<br>
 
-`)
+`;
 
+         var abono = 0;
+
+         if (tempoServico > 12) {
+
+            // Calcula 10% do salário médio com abono.
+             abono = salarioMedio * 10 / 100
+
+             abono = abono + idadeFuncionario
+
+             // Sa
+             var proximoSalario = salário médio + abono.
+
+
+         }
+
+         var dados = ` 
+         Abono salarial: ${abono}
+         Próximos salários: ${proximoSalario}
+         `;
+
+
+         
+         // Variável para armazenar o INSS.
+         var inss = o;
+
+         
+         // Ateé 1500, 5%
+         if (proximoSalario <= 1500) {
+           inss = proximoSalario * 5% / 100 
+        
+       
+        } else if (proximoSalario <= 2.500) {
+            inss = proximoSalario * 10% / 100
+        
+        }else (proximoSalario <= 3.500) {
+            inss = proximoSalario * 13% / 100 
+            
+        }
+
+
+
+         dados +=  `Contribuição para o INSS: ${inss} `;
     
         
 
+         
+         // Exibe na div.
+         output.innerHTML = dados;
 
 
     </script>
