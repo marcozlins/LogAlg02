@@ -112,29 +112,29 @@
              *    Obténha dados digitados nos campos e armazene nas variáveis.
              *    Faça as conversões 'string → número' quando necessário.
              */
-            var nome = employeeName.value;
-            var tempoServico = parseInt(serviceTime.value);
-            var salarioAtual = parseFloat(averagePay.value);
-            var idade = parseInt(age.value);
+             var nome = employeeName.value;
+             var tempoServico = parseInt(serviceTime.value);
+             var salarioAtual = parseFloat(averagePay.value);
+             var idade = parseInt(age.value);
 
-            console.log(nome, tempoServico, salarioAtual, idade);
+             console.log(nome, tempoServico, salarioAtual, idade);
             /**
              * 3) Crie uma variável para armazenar o abono salarial do funcionário.
              *    Calcule o abono salarial do funcionário, com base no tempo de serviço e na idade.
              *    Armazene na variável.
              */
-            var abono = 0;
+             var abono = 0;
 
-            if (tempoServico > 12)
-            abono = salarioAtual * 10 / 100;
+             if (tempoServico > 12)
+             abono = salarioAtual * 10 / 100;
 
-            abono += idade;
+             abono += idade;
             /**
              * 4) Crie uma variável para armazenar o valor do novo salário.
              *    Calcule o valor do novo salário.
              *    Armazene na variável.
              */
-            var novoSalario = salarioAtual + abono;
+             var novoSalario = salarioAtual + abono;
             /**
              * 5) Crie uma variável para armazenar o valor da contribuição ao INSS.
              *    Calcule o valor da contribuição ao INSS sobre o valor do novo salário.
@@ -145,7 +145,8 @@
             /**
              * 6) Exiba o valor das variáveis 3, 4 e 5 nos campos 'readonly' do formulário.
              */
-            allow
+             allowance.value = abono;
+             nextPay.value = novoSalario;
             /**
              * 7) Ao clicar no botão [Gerar relatório], execute a 'Função sem nome'.
              */
