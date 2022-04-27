@@ -147,6 +147,7 @@
              */
              allowance.value = abono;
              nextPay.value = novoSalario;
+             
             /**
              * 7) Ao clicar no botão [Gerar relatório], execute a 'Função sem nome'.
              */
